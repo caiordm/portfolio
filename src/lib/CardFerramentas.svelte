@@ -27,4 +27,16 @@
 		width: 3rem;
 		height: 3rem;
 	}
+
+	@media (max-width: 468px) {
+		.card-ferramenta {
+			width: 2rem;
+			height: 2rem;
+		}
+
+		img {
+			width: 2.3rem;
+			height: 2.3rem;
+		}
+	}
 </style>

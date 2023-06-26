@@ -1,12 +1,12 @@
 <script>
 	export let tituloProjeto = '';
-	export let imgSrc = '';
+	export let src = '';
 	export let imgAlt = '';
 	export let linkDeploy = '';
 </script>
 
 <a href={linkDeploy} class="card-projeto" target="_blank">
-	<img src={imgSrc} alt={imgAlt} />
+	<img {src} alt={imgAlt} />
 	<h1>{tituloProjeto}</h1>
 </a>
 
@@ -45,5 +45,26 @@
 
 	h1:hover {
 		color: var(--indigo);
+	}
+
+	@media (max-width: 468px) {
+		img {
+			max-width: 164px;
+			min-width: 164px;
+			max-height: 92px;
+			min-height: 92px;
+		}
+
+		a {
+			margin-top: 0;
+		}
+
+		.card-projeto {
+			gap: 0.4rem;
+		}
+
+		h1 {
+			font-size: 1.4rem;
+		}
 	}
 </style>

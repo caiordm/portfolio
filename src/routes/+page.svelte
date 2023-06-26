@@ -1,6 +1,8 @@
 <script>
-	import CardFerramentas from '../components/CardFerramentas.svelte';
-	import CardProjetos from '../components/CardProjetos.svelte';
+	import CardFerramentas from '../lib/CardFerramentas.svelte';
+	import CardProjetos from '../lib/CardProjetos.svelte';
+
+	import src from '../images/campusLanding.png';
 </script>
 
 <section>
@@ -17,10 +19,7 @@
 		</div>
 
 		<div class="ferramentas">
-			<h2>
-				Tecnologias
-				<h3 style="color: var(--indigo);">.</h3>
-			</h2>
+			<h2>Tecnologias</h2>
 			<div class="cards-ferramentas">
 				<CardFerramentas
 					imgAlt="HTML5"
@@ -56,26 +55,23 @@
 
 	<div class="rigth-content">
 		<div class="projetos">
-			<h2>
-				Projetos
-				<h3 style="color: var(--indigo);">.</h3>
-			</h2>
+			<h2>Projetos</h2>
 		</div>
 		<div class="cards-projetos">
 			<CardProjetos
-				imgSrc="/src/assets/CampusLanding.png"
+				{src}
 				imgAlt="Campus Virtual"
 				tituloProjeto="Campus Virtual"
 				linkDeploy="https://campusvirtualfront.vercel.app/"
 			/>
 		</div>
-		<!-- <div class="cards-projetos">
+		<div class="cards-projetos">
 			<CardProjetos
-				imgSrc="https://i.pinimg.com/originals/97/08/0b/97080bfdcd2030df7116c7be1d451573.png"
-				imgAlt="Campus Virtual"
+				src="https://uploads-ssl.webflow.com/5ea82056771c9dd4b6f61bdc/60d0889c139877fe45366e87_Blog_main_improve_ad_quality_Dean_20210621.png"
+				imgAlt="Apenas um Teste"
 				tituloProjeto="Teste"
 			/>
-		</div> -->
+		</div>
 	</div>
 </section>
 
@@ -85,12 +81,14 @@
 	}
 
 	section {
-		margin: 1rem 7rem 0rem 7rem;
+		max-width: 80%;
 		display: flex;
+		gap: 4rem;
+		justify-content: space-around;
 	}
 
 	.left-content {
-		width: 60%;
+		width: 50%;
 	}
 
 	h1 {
@@ -103,17 +101,19 @@
 		font-size: 2rem;
 		padding-left: 0.5rem;
 		color: var(--low-white);
+		font-family: 'IBM Plex Mono', monospace;
 	}
 
 	span {
 		display: block;
-		max-width: 75%;
+		max-width: 90%;
 		padding-left: 2rem;
 		margin-bottom: 0.8rem;
 
 		cursor: default;
 		font-size: 1.4rem;
 		color: var(--low-white);
+		font-family: 'IBM Plex Mono', monospace;
 	}
 
 	.titles {
@@ -135,11 +135,16 @@
 
 	h2 {
 		display: flex;
-		flex-direction: row;
 		font-size: 2.6rem;
 		color: var(--mid-white);
 		gap: 1rem;
 		align-items: center;
+	}
+
+	.rigth-content {
+		width: min-content;
+		display: flex;
+		flex-direction: column;
 	}
 
 	.cards-ferramentas {
@@ -147,7 +152,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: 0.8rem;
-		max-width: 50%;
+		max-width: 70%;
 	}
 
 	.cards-projetos {
@@ -155,5 +160,71 @@
 		flex-wrap: wrap;
 		max-width: 40%;
 		gap: 1rem;
+	}
+
+	.projetos {
+		max-width: fit-content;
+	}
+
+	@media (max-width: 468px) {
+		section {
+			flex-direction: column;
+			gap: 2rem;
+		}
+
+		.left-content,
+		.rigth-content {
+			width: 100%;
+		}
+
+		.rigth-content {
+			padding-left: 0.5rem;
+			gap: 1rem;
+		}
+
+		.titles {
+			padding: 0 0 1rem 0;
+		}
+
+		h1 {
+			font-size: 4rem;
+		}
+
+		h4 {
+			font-size: 1.4rem;
+		}
+
+		span {
+			font-size: 1rem;
+			padding-left: 0.5rem;
+			max-width: 100%;
+		}
+
+		h2 {
+			font-size: 2rem;
+		}
+
+		h3 {
+			display: none;
+		}
+
+		.ferramentas {
+			padding-left: 0.5rem;
+		}
+
+		.cards-ferramentas {
+			margin-top: 1rem;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.8rem;
+			max-width: 100%;
+		}
+
+		.cards-projetos {
+			display: flex;
+			flex-wrap: wrap;
+			max-width: 100%;
+			gap: 1rem;
+		}
 	}
 </style>

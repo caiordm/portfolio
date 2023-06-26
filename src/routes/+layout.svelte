@@ -1,7 +1,11 @@
+<script>
+    import logo from "../images/logo.png";
+</script>
+
 <main>
 	<header>
 		<a href="/">
-			<img src="/src/assets/logo.png" alt="Logo" />
+			<img src="{logo}" alt="Logo" />
 		</a>
 		<div class="contact">
 			<a href="https://github.com/caiordm" target="_blank">
@@ -25,6 +29,12 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
+        height: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 	}
 
     :root {
@@ -34,11 +44,19 @@
         --mid-white: #e7f1f5;
     }
 
+    main {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
     header {
         display: flex;
-        padding: 2rem 8rem 0rem 8rem;
         justify-content: space-between;
-        align-items: center;
+        width: 80%;
     }
 
     header img {
@@ -66,5 +84,4 @@
         transform: scale(1.2);
     }
 
-	/* font-family: 'IBM Plex Mono', monospace; */
 </style>
