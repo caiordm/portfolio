@@ -4,7 +4,7 @@
 </script>
 
 <div class="card-ferramenta">
-	<img src="{imgSrc}" alt="{imgAlt}">
+	<img src={imgSrc} alt={imgAlt}>
 </div>
 
 <style>

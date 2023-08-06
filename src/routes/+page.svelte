@@ -3,6 +3,7 @@
 	import CardProjetos from '../lib/CardProjetos.svelte';
 
 	import src from '../images/campusLanding.png';
+	import css from '../images/css-3.png';
 </script>
 
 <section>
@@ -202,10 +203,6 @@
 
 		h2 {
 			font-size: 2rem;
-		}
-
-		h3 {
-			display: none;
 		}
 
 		.ferramentas {
