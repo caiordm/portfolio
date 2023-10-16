@@ -20,7 +20,7 @@
 		</div>
 
 		<div class="ferramentas">
-			<h2>Tecnologias .</h2>
+			<h2>Tecnologias ..</h2>
 			<div class="cards-ferramentas">
 				<CardFerramentas
 					imgAlt="HTML5"
@@ -68,7 +68,7 @@
 
 	<div class="rigth-content">
 		<div class="projetos">
-			<h2>Projetos .</h2>
+			<h2>Projetos ..</h2>
 		</div>
 		<div class="cards-projetos">
 			<CardProjetos
