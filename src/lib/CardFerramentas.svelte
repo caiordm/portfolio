@@ -1,9 +1,10 @@
 <script>
 	export let imgSrc = '';
 	export let imgAlt = '';
+	export let color = '';
 </script>
 
-<div class="card-ferramenta">
+<div class="card-ferramenta" style="background-color: {color};">
 	<img src={imgSrc} alt={imgAlt}>
 </div>
 
@@ -15,12 +16,14 @@
 		width: 3rem;
 		height: 3rem;
         padding: 0.6rem;
-
+		border-radius: 10px;
+		border: 1px solid rgba(255, 255, 255, 0.18);
+/* 
 		background: rgba(255, 255, 255, 0.1);
 		backdrop-filter: blur(20px);
 		-webkit-backdrop-filter: blur(20px);
 		border-radius: 10px;
-		border: 1px solid rgba(255, 255, 255, 0.18);
+		border: 1px solid rgba(255, 255, 255, 0.18); */
 	}
 
 	img {

@@ -13,42 +13,54 @@
 				<h1>CAIO</h1>
 				<h4>Web Developer</h4>
 			</div>
-			<span
-				>From Pernambuco, Brasil. Estudo desenvolvimento de softwares desde 2019, e desde então
-				venho aprimorando meus conhecimentos</span
-			>
+			<span>
+				From Pernambuco, Brasil. Estudo desenvolvimento de softwares desde 2019, e desde então
+				venho aprimorando meus conhecimentos
+			</span>
 		</div>
 
 		<div class="ferramentas">
-			<h2>Tecnologias</h2>
+			<h2>Tecnologias .</h2>
 			<div class="cards-ferramentas">
 				<CardFerramentas
 					imgAlt="HTML5"
-					imgSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png"
+					imgSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/2048px-HTML5_Badge.svg.png"
+					color="#ea3900"
 				/>
 				<CardFerramentas
 					imgAlt="CSS"
 					imgSrc="https://logospng.org/download/css-3/logo-css-3-2048.png"
+					color="#0074be"
 				/>
 				<CardFerramentas
 					imgAlt="JavaScript"
 					imgSrc="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
+					color="#ffdf00"
 				/>
 				<CardFerramentas
 					imgAlt="Svelte"
-					imgSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/199px-Svelte_Logo.svg.png"
+					imgSrc="https://miro.medium.com/v2/resize:fit:400/0*r6OTkIa8jyneCBGY.png"
+					color="#ff3c00"
 				/>
 				<CardFerramentas
 					imgAlt="PHP"
-					imgSrc="https://logospng.org/download/php/logo-php-1024.png"
+					imgSrc="https://images.vexels.com/media/users/3/166470/isolated/preview/73835fa38fba6d35aff9de603dc5044a-icone-da-linguagem-de-programacao-php.png"
+					color="#7377b2"
+				/>
+				<CardFerramentas
+				imgAlt="Java"
+				imgSrc="https://cdn.icon-icons.com/icons2/2415/PNG/512/java_original_wordmark_logo_icon_146459.png"
+				color="#ffffff"
+				/>
+				<CardFerramentas
+				imgAlt="Figma"
+				imgSrc="https://logodownload.org/wp-content/uploads/2022/12/figma-logo-0.png"
+				color="#2e3139"
 				/>
 				<CardFerramentas
 					imgAlt="MySQL"
-					imgSrc="https://www.freepnglogos.com/uploads/logo-mysql-png/logo-mysql-mysql-logo-png-images-are-download-crazypng-21.png"
-				/>
-				<CardFerramentas
-					imgAlt="Figma"
-					imgSrc="https://logodownload.org/wp-content/uploads/2022/12/figma-logo-0.png"
+					imgSrc="https://www.tshirtgeek.com.br/wp-content/uploads/2021/08/com031.jpg"
+					color="#ffffff"
 				/>
 			</div>
 		</div>
@@ -56,7 +68,7 @@
 
 	<div class="rigth-content">
 		<div class="projetos">
-			<h2>Projetos</h2>
+			<h2>Projetos .</h2>
 		</div>
 		<div class="cards-projetos">
 			<CardProjetos
