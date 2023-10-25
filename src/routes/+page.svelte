@@ -4,6 +4,7 @@
 
 	import src from '../images/campusLanding.png';
 	import src2 from '../images/socialTree.png';
+	import src3 from '../images/qrCod.png';
 	import css from '../images/css-3.png';
 </script>
 
@@ -85,6 +86,14 @@
 				imgAlt="Social Tree"
 				tituloProjeto="Social Tree"
 				linkDeploy="https://caiordm.github.io/social-tree/"
+			/>
+		</div>
+		<div class="cards-projetos">
+			<CardProjetos
+				src={src3}
+				imgAlt="QR Code Component"
+				tituloProjeto="QR Code Component"
+				linkDeploy="https://caiordm.github.io/qrcode-component/"
 			/>
 		</div>
 	</div>
