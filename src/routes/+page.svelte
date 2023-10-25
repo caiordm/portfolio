@@ -17,7 +17,7 @@
 			</div>
 			<span>
 				From Pernambuco, Brasil. Estudo desenvolvimento de softwares desde 2019, e desde então
-				venho aprimorando meus conhecimentos
+				venho aprimorando meus conhecimentos e buscando minha primeira vaga
 			</span>
 		</div>
 
