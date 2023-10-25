@@ -3,6 +3,7 @@
 	import CardProjetos from '../lib/CardProjetos.svelte';
 
 	import src from '../images/campusLanding.png';
+	import src2 from '../images/socialTree.png';
 	import css from '../images/css-3.png';
 </script>
 
@@ -80,9 +81,10 @@
 		</div>
 		<div class="cards-projetos">
 			<CardProjetos
-				src="https://uploads-ssl.webflow.com/5ea82056771c9dd4b6f61bdc/60d0889c139877fe45366e87_Blog_main_improve_ad_quality_Dean_20210621.png"
-				imgAlt="Apenas um Teste"
-				tituloProjeto="Teste"
+				src={src2}
+				imgAlt="Social Tree"
+				tituloProjeto="Social Tree"
+				linkDeploy="https://caiordm.github.io/social-tree/"
 			/>
 		</div>
 	</div>
