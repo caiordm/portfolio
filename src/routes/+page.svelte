@@ -4,7 +4,7 @@
 
 	import src from '../images/campusLanding.png';
 	import src2 from '../images/socialTree.png';
-	import src3 from '../images/qrCod.png';
+	import src3 from '../images/libertah.png';
 	import css from '../images/css-3.png';
 </script>
 
@@ -91,9 +91,9 @@
 		<div class="cards-projetos">
 			<CardProjetos
 				src={src3}
-				imgAlt="QR Code Component"
-				tituloProjeto="QR Code Component"
-				linkDeploy="https://caiordm.github.io/qrcode-component/"
+				imgAlt="Banda Libertah"
+				tituloProjeto="Banda Libertah"
+				linkDeploy="https://bandalibertah.vercel.app"
 			/>
 		</div>
 	</div>
