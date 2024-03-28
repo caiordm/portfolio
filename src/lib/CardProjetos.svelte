@@ -47,6 +47,21 @@
 		color: var(--indigo);
 	}
 
+	@media (max-width: 1440px) {
+		img {
+			max-width: 180px;
+			min-width: 180px;
+			max-height: 110px;
+			min-height: 110px;
+			border-radius: 6px;
+			box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+			transition: all 0.6s;
+		}
+		h1 {
+			font-size: 1.4rem;
+		}
+	}
+
 	@media (max-width: 468px) {
 		img {
 			max-width: 164px;

@@ -16,8 +16,8 @@
 				<h4>Web Developer</h4>
 			</div>
 			<span>
-				From Pernambuco, Brasil. Estudo desenvolvimento de softwares desde 2019, e desde então
-				venho aprimorando meus conhecimentos e buscando minha primeira vaga como desenvolvedor.
+				From Pernambuco, Brasil. Estudo desenvolvimento de softwares desde 2019, e desde então venho
+				aprimorando meus conhecimentos e buscando minha primeira vaga como desenvolvedor.
 			</span>
 		</div>
 
@@ -55,19 +55,19 @@
 					color="#ffffff"
 				/>
 				<CardFerramentas
-				imgAlt="Java"
-				imgSrc="https://cdn.icon-icons.com/icons2/2415/PNG/512/java_original_wordmark_logo_icon_146459.png"
-				color="#ffffff"
+					imgAlt="Java"
+					imgSrc="https://cdn.icon-icons.com/icons2/2415/PNG/512/java_original_wordmark_logo_icon_146459.png"
+					color="#ffffff"
 				/>
 				<CardFerramentas
-				imgAlt="Ruby"
-				imgSrc="https://upload.wikimedia.org/wikipedia/commons/f/f1/Ruby_logo.png"
-				color="#900600"
+					imgAlt="Ruby"
+					imgSrc="https://upload.wikimedia.org/wikipedia/commons/f/f1/Ruby_logo.png"
+					color="#900600"
 				/>
 				<CardFerramentas
-				imgAlt="Figma"
-				imgSrc="https://logodownload.org/wp-content/uploads/2022/12/figma-logo-0.png"
-				color="#2e3139"
+					imgAlt="Figma"
+					imgSrc="https://logodownload.org/wp-content/uploads/2022/12/figma-logo-0.png"
+					color="#2e3139"
 				/>
 				<CardFerramentas
 					imgAlt="MySQL"
@@ -141,7 +141,7 @@
 	span {
 		display: block;
 		max-width: 90%;
-		padding-left: 2rem;
+		padding-left: 1.6rem;
 		margin-bottom: 0.8rem;
 
 		cursor: default;
@@ -198,6 +198,28 @@
 
 	.projetos {
 		max-width: fit-content;
+	}
+
+	@media (max-width: 1440px) {
+		h1 {
+			font-size: 4rem;
+		}
+
+		h2 {
+			font-size: 2rem;
+		}
+
+		h4 {
+			font-size: 1.4rem;
+		}
+
+		span {
+			font-size: 1rem;
+		}
+
+		.cards-ferramentas {
+			max-width: 100%;
+		}
 	}
 
 	@media (max-width: 468px) {
