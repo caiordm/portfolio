@@ -50,9 +50,19 @@
 					color="#7377b2"
 				/>
 				<CardFerramentas
+					imgAlt="Laravel"
+					imgSrc="https://static-00.iconduck.com/assets.00/laravel-icon-497x512-uwybstke.png"
+					color="#ffffff"
+				/>
+				<CardFerramentas
 				imgAlt="Java"
 				imgSrc="https://cdn.icon-icons.com/icons2/2415/PNG/512/java_original_wordmark_logo_icon_146459.png"
 				color="#ffffff"
+				/>
+				<CardFerramentas
+				imgAlt="Ruby"
+				imgSrc="https://upload.wikimedia.org/wikipedia/commons/f/f1/Ruby_logo.png"
+				color="#900600"
 				/>
 				<CardFerramentas
 				imgAlt="Figma"
