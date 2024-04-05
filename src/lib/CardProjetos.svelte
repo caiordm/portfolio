@@ -69,7 +69,7 @@
 		}
 	}
 
-	@media (max-width: 744px) {
+	@media (max-width: 468px) {
 		img {
 			max-width: 164px;
 			min-width: 164px;
