@@ -13,14 +13,14 @@
 <style>
 	a {
 		text-decoration: none;
-		margin-top: 1rem;
+		/* margin-top: 1rem; */
 	}
 
 	.card-projeto {
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		gap: 1.6rem;
 	}
 
 	img {
@@ -38,7 +38,7 @@
 	}
 
 	h1 {
-		font-size: 2rem;
+		font-size: 1.4rem;
 		color: var(--mid-white);
 		transition: all 0.4s;
 	}
@@ -58,11 +58,18 @@
 			transition: all 0.6s;
 		}
 		h1 {
-			font-size: 1.4rem;
+			font-size: 1.2rem;
 		}
 	}
 
-	@media (max-width: 468px) {
+	@media (max-width: 948px) {
+		.card-projeto {
+			gap: 0.4rem;
+			flex-direction: row;
+		}
+	}
+
+	@media (max-width: 744px) {
 		img {
 			max-width: 164px;
 			min-width: 164px;
@@ -76,6 +83,7 @@
 
 		.card-projeto {
 			gap: 0.4rem;
+			flex-direction: row;
 		}
 
 		h1 {

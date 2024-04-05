@@ -5,7 +5,7 @@
 	import src from '../images/campusLanding.png';
 	import src2 from '../images/socialTree.png';
 	import src3 from '../images/libertah.png';
-	import css from '../images/css-3.png';
+	import src4 from '../images/encurtador.png';
 </script>
 
 <section>
@@ -79,32 +79,42 @@
 	</div>
 
 	<div class="rigth-content">
+		<h2>Projetos ..</h2>
 		<div class="projetos">
-			<h2>Projetos ..</h2>
+			<div class="cards-projetos">
+				<CardProjetos
+					{src}
+					imgAlt="Campus Virtual"
+					tituloProjeto="Campus Virtual"
+					linkDeploy="https://campusvirtualfront.vercel.app/"
+				/>
+			</div>
+			<div class="cards-projetos">
+				<CardProjetos
+					src={src4}
+					imgAlt="Encurtador de URL's"
+					tituloProjeto="Encurtador de URL's"
+					linkDeploy="https://encurtador-front.vercel.app"
+				/>
+			</div>
 		</div>
-		<div class="cards-projetos">
-			<CardProjetos
-				{src}
-				imgAlt="Campus Virtual"
-				tituloProjeto="Campus Virtual"
-				linkDeploy="https://campusvirtualfront.vercel.app/"
-			/>
-		</div>
-		<div class="cards-projetos">
-			<CardProjetos
-				src={src2}
-				imgAlt="Social Tree"
-				tituloProjeto="Social Tree"
-				linkDeploy="https://caiordm.github.io/social-tree/"
-			/>
-		</div>
-		<div class="cards-projetos">
-			<CardProjetos
-				src={src3}
-				imgAlt="Banda Libertah"
-				tituloProjeto="Banda Libertah"
-				linkDeploy="https://bandalibertah.vercel.app"
-			/>
+		<div class="projetos2">
+			<div class="cards-projetos">
+				<CardProjetos
+					src={src3}
+					imgAlt="Banda Libertah"
+					tituloProjeto="Banda Libertah"
+					linkDeploy="https://bandalibertah.vercel.app"
+				/>
+			</div>
+			<div class="cards-projetos">
+				<CardProjetos
+					src={src2}
+					imgAlt="Social Tree"
+					tituloProjeto="Social Tree"
+					linkDeploy="https://caiordm.github.io/social-tree/"
+				/>
+			</div>
 		</div>
 	</div>
 </section>
@@ -117,8 +127,9 @@
 	section {
 		max-width: 80%;
 		display: flex;
-		gap: 4rem;
-		justify-content: space-around;
+		gap: 2rem;
+		justify-content: space-between;
+		margin-bottom: 2rem;
 	}
 
 	.left-content {
@@ -179,6 +190,7 @@
 		width: min-content;
 		display: flex;
 		flex-direction: column;
+		gap: 1.5rem;
 	}
 
 	.cards-ferramentas {
@@ -198,6 +210,17 @@
 
 	.projetos {
 		max-width: fit-content;
+		display: flex;
+		align-items: baseline;
+		justify-content: flex-start;
+		gap: 3rem;
+	}
+
+	.projetos2 {
+		display: flex;
+		align-items: baseline;
+		justify-content: flex-start;
+		gap: 3rem;
 	}
 
 	@media (max-width: 1440px) {
@@ -222,7 +245,21 @@
 		}
 	}
 
-	@media (max-width: 468px) {
+	@media (max-width: 948px) {
+		.projetos {
+			flex-direction: column;
+			max-width: 100%;
+			gap: 1rem;
+		}
+
+		.projetos2 {
+			flex-direction: column;
+			max-width: 100%;
+			gap: 1rem;
+		}
+	}
+
+	@media (max-width: 744px) {
 		section {
 			flex-direction: column;
 			gap: 2rem;
@@ -275,6 +312,17 @@
 		.cards-projetos {
 			display: flex;
 			flex-wrap: wrap;
+			max-width: 100%;
+			gap: 1rem;
+		}
+		.projetos {
+			flex-direction: column;
+			max-width: 100%;
+			gap: 1rem;
+		}
+
+		.projetos2 {
+			flex-direction: column;
 			max-width: 100%;
 			gap: 1rem;
 		}
