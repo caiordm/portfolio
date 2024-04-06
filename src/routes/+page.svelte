@@ -16,8 +16,12 @@
 				<h4>Web Developer</h4>
 			</div>
 			<span>
-				From Pernambuco, Brasil. Estudo desenvolvimento de softwares desde 2019, e desde então venho
-				aprimorando meus conhecimentos e buscando minha primeira vaga como desenvolvedor.
+				Natural de Pernambuco, Brasil, tenho me dedicado intensamente ao estudo e prática do
+				desenvolvimento de software. Minha paixão pela tecnologia me impulsionou a buscar
+				constantemente o aprimoramento das minhas habilidades na programação. Apesar da falta de
+				experiência formal, estou extremamente entusiasmado para iniciar minha carreira como
+				desenvolvedor, pronto para contribuir com ideias inovadoras e enfrentar desafios desde o
+				primeiro dia.
 			</span>
 		</div>
 
@@ -130,10 +134,12 @@
 		gap: 2rem;
 		justify-content: space-between;
 		margin-bottom: 2rem;
+		margin-top: 60px;
+		padding-top: 60px;
 	}
 
 	.left-content {
-		width: 50%;
+		width: 60%;
 	}
 
 	h1 {
