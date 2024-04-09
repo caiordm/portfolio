@@ -134,8 +134,6 @@
 		gap: 2rem;
 		justify-content: space-between;
 		margin-bottom: 2rem;
-		margin-top: 60px;
-		padding-top: 60px;
 	}
 
 	.left-content {
@@ -227,6 +225,17 @@
 		align-items: baseline;
 		justify-content: flex-start;
 		gap: 3rem;
+	}
+
+	@media (min-width: 2000px) {
+		:global(html) {
+			height: 100%;
+		}
+
+		:global(header) {
+			position: absolute;
+			top: 0;
+		}
 	}
 
 	@media (max-width: 1440px) {

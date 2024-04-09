@@ -26,9 +26,6 @@
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,500;0,600;1,400;1,500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
-    :global(html) {
-        height: 100%;
-    }
 
 	:global(body) {
 		background: #fa5700;
@@ -65,8 +62,6 @@
         display: flex;
         justify-content: space-between;
         width: 80%; 
-        position: fixed;
-        top: 0;
     }
 
     header img {
