@@ -18,10 +18,7 @@
 			<span>
 				Natural de Pernambuco, Brasil, tenho me dedicado intensamente ao estudo e prática do
 				desenvolvimento de software. Minha paixão pela tecnologia me impulsionou a buscar
-				constantemente o aprimoramento das minhas habilidades na programação. Apesar da falta de
-				experiência formal, estou extremamente entusiasmado para iniciar minha carreira como
-				desenvolvedor, pronto para contribuir com ideias inovadoras e enfrentar desafios desde o
-				primeiro dia.
+				constantemente o aprimoramento das minhas habilidades na programação. Estou extremamente entusiasmado para contribuir com ideias inovadoras e enfrentar desafios diversos em minha jornada.
 			</span>
 		</div>
 
