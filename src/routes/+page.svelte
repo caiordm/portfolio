@@ -3,9 +3,9 @@
 	import CardProjetos from '../lib/CardProjetos.svelte';
 
 	import src from '../images/campusLanding.png';
-	import src2 from '../images/socialTree.png';
+	import src2 from '../images/minitwi.png';
 	import src3 from '../images/libertah.png';
-	import src4 from '../images/encurtador.png';
+	import src4 from '../images/encurtadorUsed.png';
 </script>
 
 <section>
@@ -114,9 +114,9 @@
 			<div class="cards-projetos">
 				<CardProjetos
 					src={src2}
-					imgAlt="Social Tree"
-					tituloProjeto="Social Tree"
-					linkDeploy="https://caiordm.github.io/social-tree/"
+					imgAlt="Mini Twi"
+					tituloProjeto="Mini Twi"
+					linkDeploy="https://twitter-production-12f4.up.railway.app/"
 				/>
 			</div>
 		</div>
