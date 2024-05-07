@@ -8,7 +8,9 @@ const projects = [
 ];
 
 (async () => {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({
+        args: ["--no-sandbox", "--disable-setuid-sandbox"],
+      });
 
     for (const project of projects) {
         const page = await browser.newPage();
