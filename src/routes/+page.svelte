@@ -84,6 +84,14 @@
 		<div class="projetos">
 			<div class="cards-projetos">
 				<CardProjetos
+					src={src3}
+					imgAlt="Banda Libertah"
+					tituloProjeto="Banda Libertah"
+					linkDeploy="https://bandalibertah.vercel.app"
+				/>
+			</div>
+			<div class="cards-projetos">
+				<CardProjetos
 					{src}
 					imgAlt="Campus Virtual"
 					tituloProjeto="Campus Virtual"
@@ -100,14 +108,6 @@
 			</div>
 		</div>
 		<div class="projetos2">
-			<div class="cards-projetos">
-				<CardProjetos
-					src={src3}
-					imgAlt="Banda Libertah"
-					tituloProjeto="Banda Libertah"
-					linkDeploy="https://bandalibertah.vercel.app"
-				/>
-			</div>
 			<div class="cards-projetos">
 				<CardProjetos
 					src={src2}
