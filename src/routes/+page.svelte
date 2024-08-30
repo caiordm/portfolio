@@ -98,6 +98,8 @@
 					linkDeploy="https://campusvirtualfront.vercel.app/"
 				/>
 			</div>
+		</div>
+		<div class="projetos2">
 			<div class="cards-projetos">
 				<CardProjetos
 					src={src4}
@@ -106,8 +108,6 @@
 					linkDeploy="https://encurtador-front.vercel.app"
 				/>
 			</div>
-		</div>
-		<div class="projetos2">
 			<div class="cards-projetos">
 				<CardProjetos
 					src={src2}
