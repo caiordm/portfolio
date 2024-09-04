@@ -16,9 +16,7 @@
 				<h4>Web Developer</h4>
 			</div>
 			<span>
-				Natural de Pernambuco, Brasil, tenho me dedicado intensamente ao estudo e prática do
-				desenvolvimento de software. Minha paixão pela tecnologia me impulsionou a buscar
-				constantemente o aprimoramento das minhas habilidades na programação. Estou extremamente entusiasmado para contribuir com ideias inovadoras e enfrentar desafios diversos em minha jornada.
+				Natural de Pernambuco, Brasil. Sou um desenvolvedor de software ccom muito interesse em criar soluções tecnológicas inovadoras. Dedico-me continuamente ao desenvolvimento de novas habilidades de programação, buscando sempre estar atualizado com as últimas tendências do mercado. Estou extremamente entusiasmado para contribuir com ideias inovadoras e enfrentar desafios diversos em minha jornada.
 			</span>
 		</div>
 
@@ -108,14 +106,14 @@
 					linkDeploy="https://encurtador-front.vercel.app"
 				/>
 			</div>
-			<div class="cards-projetos">
+			<!-- <div class="cards-projetos">
 				<CardProjetos
 					src={src2}
 					imgAlt="Mini Twi"
 					tituloProjeto="Mini Twi"
 					linkDeploy="https://twitter-production-12f4.up.railway.app/"
 				/>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </section>
