@@ -3,7 +3,8 @@
 	import CardProjetos from '../lib/CardProjetos.svelte';
 
 	import src from '../images/campusLanding.png';
-	import src2 from '../images/minitwi.png';
+	// import src2 from '../images/minitwi.png';
+	import src2 from '../images/liturgia.png';
 	import src3 from '../images/libertah.png';
 	import src4 from '../images/encurtadorUsed.png';
 </script>
@@ -16,7 +17,12 @@
 				<h4>Web Developer</h4>
 			</div>
 			<span>
-				Natural de Pernambuco, Brasil. Sou um desenvolvedor de software ccom muito interesse em criar soluções tecnológicas inovadoras. Dedico-me continuamente ao desenvolvimento de novas habilidades de programação, buscando sempre estar atualizado com as últimas tendências do mercado. Estou extremamente entusiasmado para contribuir com ideias inovadoras e enfrentar desafios diversos em minha jornada.
+				Desenvolvedor de software, apaixonado por tecnologia e inovação. Possuo sólidos
+				conhecimentos em Ruby On Rails, Laravel e Vue.js, com experiência em desenvolvimento de
+				aplicações web responsivas, como o Campus Virtual, onde também desenvolvi habilidades em
+				trabalho em equipe e resolução de problemas. Proativo e em constante aprendizado, busco
+				oportunidades para aplicar meus conhecimentos em projetos desafiadores e colaborar com
+				equipes multidisciplinares.
 			</span>
 		</div>
 
@@ -98,6 +104,14 @@
 			</div>
 		</div>
 		<div class="projetos2">
+			<div class="cards-projetos">
+				<CardProjetos
+					src={src2}
+					imgAlt="Liturgia.site"
+					tituloProjeto="Liturgia.site"
+					linkDeploy="https://liturgia.site"
+				/>
+			</div>
 			<div class="cards-projetos">
 				<CardProjetos
 					src={src4}
