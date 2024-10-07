@@ -7,6 +7,7 @@
 	import src2 from '../images/liturgia.png';
 	import src3 from '../images/libertah.png';
 	import src4 from '../images/encurtadorUsed.png';
+	import src5 from '../images/viagebem.png';
 </script>
 
 <section>
@@ -114,10 +115,10 @@
 			</div>
 			<div class="cards-projetos">
 				<CardProjetos
-					src={src4}
-					imgAlt="Encurtador de URL's"
-					tituloProjeto="Encurtador de URL's"
-					linkDeploy="https://encurtador-front.vercel.app"
+					src={src5}
+					imgAlt="ViageBem🧳"
+					tituloProjeto="ViageBem🧳"
+					linkDeploy="https://viagebem.vercel.app"
 				/>
 			</div>
 			<!-- <div class="cards-projetos">
