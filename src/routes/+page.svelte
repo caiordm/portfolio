@@ -210,6 +210,7 @@
 				imgSrc="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg"
 				color="#1d212d"
 				colorTitle="var(--mid-white)"
+				link="https://code.visualstudio.com/"
 			/>
 			<CardFerramentas
 				title="Zen Browser"
