@@ -10,6 +10,7 @@
 	import src4 from '../images/encurtadorUsed.png';
 	import src5 from '../images/viagebem.png';
 	import src6 from '../images/sprintech.png';
+	import github from '../images/githubwhite.png'
 </script>
 
 <section>
@@ -231,6 +232,26 @@
 				link="https://insomnia.rest/"
 			/>
 			<CardFerramentas
+				title="GitHub"
+				imgAlt="GitHub"
+				subtitle="Plataforma para controle de versão"
+				imgSrc="{github}"
+				color="#040642"
+				colorTitle="#fff"
+				colorSubtitle="#f1f1f6"
+				link="https://github.com"
+			/>
+			<CardFerramentas
+				title="Vercel"
+				imgAlt="Vercel"
+				subtitle="Plataforma para web"
+				imgSrc="https://www.svgrepo.com/show/327408/logo-vercel.svg"
+				color="#ffffff"
+				colorTitle="#000"
+				colorSubtitle="#a1a1a1"
+				link="https://vercel.com/"
+			/>
+			<CardFerramentas
 				title="DBeaver"
 				imgAlt="DBeaver"
 				subtitle="Database Tool"
@@ -238,6 +259,16 @@
 				color="#6e98bf"
 				colorTitle="var(--mid-white)"
 				link="https://dbeaver.io/download/"
+			/>
+			<CardFerramentas
+				title="Anytype"
+				imgAlt="Anytype"
+				subtitle="Ferramenta de anotações e produtividade"
+				imgSrc="https://ecosystem.ipfs.tech/images/projects/icon-anytype.png"
+				color="#fef7e9"
+				colorTitle="#000"
+				colorSubtitle="#252627"
+				link="https://anytype.io/"
 			/>
 		</div>
 	</div>
