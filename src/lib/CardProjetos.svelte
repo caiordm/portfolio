@@ -4,36 +4,49 @@
 	export let src = '';
 	export let imgAlt = '';
 	export let linkDeploy = '';
+	export let deploy = false;
+	export let tecnologias = [];
 </script>
 
 <a href={linkDeploy} class="card-projeto" target="_blank">
 	<img {src} alt={imgAlt} />
 	<div class="texts">
-		<h1>{tituloProjeto} <strong>Clique para acessar</strong></h1>
-		<span>{description}</span>
+		<div class="titles">
+			<h1>{tituloProjeto} <strong>{ deploy ? 'Acesse o site aqui' : 'Veja o código-fonte' }</strong></h1>
+			<p>{description}</p>
+		</div>
+		<div class="sect2">
+			<h2>Tecnologias</h2>
+			<div class="tecnologias">
+				{#each tecnologias as tecnologia }
+					<span>{tecnologia}</span>
+				{/each}
+			</div>
+		</div>
 	</div>
 </a>
 
 <style>
 	a {
 		text-decoration: none;
-		/* margin-top: 1rem; */
 	}
 
 	.card-projeto {
 		display: flex;
-		gap: 1rem;
+		flex-direction: column;
+		gap: 0.1rem;
 		align-items: start;
 		justify-content: center;
-		width: 100%;
-		padding-bottom: 1rem;
-		border-bottom: 2px solid #e9e9e94c;
-		padding-top: 1rem;
+		width: 28%;
+		padding: 0.8rem 1rem 0.4rem 0.8rem;
+		background-color: #ea85004d;
+		border: 1px solid #e9e9e94c;
+		border-radius: 10px;
 	}
 
 	img {
-		width: 560px;
-		height: 335px;
+		width: 100%;
+		max-height: 40%;
 		border-radius: 6px;
 		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 		transition: all 0.6s;
@@ -55,7 +68,12 @@
 		font-weight: 600;
 	}
 
-	span {
+	h2 {
+		color: var(--low-white);
+		font-size: 14pt;
+	}
+
+	p {
 		font-size: 16;
 		color: var(--low-white);
 	}
@@ -63,12 +81,30 @@
 	.texts {
 		display: flex;
 		flex-direction: column;
+		justify-content: space-between;
+		gap: 0.2rem;
+		height: 80%;
+		padding: 0.8rem 0 0.4rem 0;
+	}
+
+	.tecnologias {
+		display: flex;
+		flex-wrap: wrap;
 		gap: 0.4rem;
-		padding: 2rem 0;
+	}
+
+	span {
+		font-size: 10pt;
+		font-weight: 600;
+		padding: 0.2rem 0.6rem;
+		border-radius: 30px;
+		background-color: #ea84006f;
+		border: 1px solid #e9e9e94c;
+		color: #e9e9e9d7;
 	}
 
 	strong {
-		font-size: 12pt;
+		font-size: 10pt;
 		font-weight: 700;
 		padding: 0.4rem 0.6rem;
 		border-radius: 30px;
@@ -85,7 +121,7 @@
 		h1 {
 			font-size: 42pt;
 		}
-		span {
+		p {
 			font-size: 28pt;
 		}
 
@@ -95,26 +131,19 @@
 	}
 
 	@media (max-width: 1440px) {
-		img {
-			width: 448px;
-			height: 272px;
-			border-radius: 6px;
-			box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-			transition: all 0.6s;
-		}
 		h1 {
-			font-size: 24pt;
+			font-size: 16pt;
 		}
 
-		span {
-			font-size: 14pt;
+		p {
+			font-size: 13pt;
 		}
 	}
 
 	@media (max-width: 948px) {
 		.card-projeto {
 			gap: 0.6rem;
-			flex-direction: row;
+			width: 100%;
 		}
 		strong {
 			font-size: 8pt;
@@ -122,30 +151,20 @@
 	}
 
 	@media (max-width: 744px) {
-		img {
-			width: 296px;
-			height: 174px;
-		}
-
-		a {
-			margin-top: 0;
-		}
-
 		.card-projeto {
-			flex-direction: column;
+			margin-top: 0;
 		}
 
 		h1 {
 			font-size: 16pt;
 		}
 
-		span {
+		p {
 			font-size: 11pt;
 		}
 
 		.texts {
 			padding: 0.4rem 0;
-			gap: 1rem;
 		}
 	}
 </style>

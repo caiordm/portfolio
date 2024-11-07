@@ -10,7 +10,22 @@
 	import src4 from '../images/encurtadorUsed.png';
 	import src5 from '../images/viagebem.png';
 	import src6 from '../images/sprintech.png';
-	import github from '../images/githubwhite.png'
+	import src7 from '../images/awsproj.png';
+	import github from '../images/githubwhite.png';
+	import { onMount } from 'svelte';
+
+	function calcularEscalas(larguraOriginal, alturaOriginal, fator) {
+		const novaLargura = larguraOriginal * fator;
+		const novaAltura = alturaOriginal * fator;
+		return { largura: novaLargura, altura: novaAltura };
+	}
+
+	onMount(() => {
+		const dimensõesEscaladas = calcularEscalas(336, 204, 1.1);
+		console.log(dimensõesEscaladas);
+	});
+
+	// Exemplo de uso:
 </script>
 
 <section>
@@ -131,64 +146,80 @@
 	<div class="rigth-content">
 		<h2>Projetos ..</h2>
 		<div class="projetos">
-			<div class="cards-projetos">
-				<CardProjetos
-					{src}
-					imgAlt="Campus Virtual"
-					tituloProjeto="Campus Virtual"
-					description="Plataforma de gestão acadêmica, para usuários do tipo administrador, aluno e professor. Com funcionalidades como Boletim, Avisos, Rede Social entre outras."
-					linkDeploy="https://campusvirtualfront.vercel.app/"
-				/>
-			</div>
-			<div class="cards-projetos">
-				<CardProjetos
-					src={src3}
-					imgAlt="Banda Libertah"
-					tituloProjeto="Banda Libertah"
-					description="Landing Page para uma banda, feita pra contar a história da banda e também exibir outras informações sobre a banda."
-					linkDeploy="https://libertah.site"
-				/>
-			</div>
-			<div class="cards-projetos">
-				<CardProjetos
-					src={src2}
-					imgAlt="Liturgia.site"
-					tituloProjeto="Liturgia.site"
-					description="Liturgia.site é um website onde os fiéis podem ler a palavra diária de forma simples e concisa, para isso é consumida uma API Pública que é atualizada diariamente"
-					linkDeploy="https://liturgia.site"
-				/>
-			</div>
-			<div class="cards-projetos">
-				<CardProjetos
-					src={src5}
-					imgAlt="ViageBem🧳"
-					tituloProjeto="ViageBem🧳"
-					description="Aplicação onde foi utilizada IA (Gemini API) para recomendar pontos turísticos e dar dicas sobre o destino colocado pelo usuário."
-					linkDeploy="https://viagebem.vercel.app"
-				/>
-			</div>
-			<div class="cards-projetos">
-				<CardProjetos
-					src={src6}
-					imgAlt="Sprintech"
-					tituloProjeto="Sprintech"
-					description="Landing Page da Sprintech, uma startup de desenvolvimento de software, que buscava uma Landing Page moderna e ao mesmo tempo simples."
-					linkDeploy="https://sprintech.net.br"
-				/>
-			</div>
-			<!-- <div class="cards-projetos">
-				<CardProjetos
-					src={src1}
-					imgAlt="Mini Twi"
-					tituloProjeto="Mini Twi"
-					description="Landing Page para uma banda, feita pra contar a história da banda e também exibir outras informações sobre a banda."
-					linkDeploy="https://twitter-production-12f4.up.railway.app/"
-					/>
-			</div> -->
+			<CardProjetos
+				{src}
+				imgAlt="Campus Virtual"
+				tituloProjeto="Campus Virtual"
+				description="Plataforma de gestão acadêmica, para usuários do tipo administrador, aluno e professor. Com funcionalidades como Boletim, Avisos, Rede Social entre outras."
+				deploy={true}
+				tecnologias={['Vue.js', 'Laravel', 'Inertia.js', 'MySQL']}
+				linkDeploy="https://campusvirtualfront.vercel.app/"
+			/>
+			<CardProjetos
+				src={src7}
+				imgAlt="ArticlesWS"
+				tituloProjeto="ArticlesWS"
+				description="POC (Proof Of Concept) que visa aprofundar o conhecimento em Docekr e tecnologias cloud da AWS, como S3. E também entender uma arquitetura baseada em containers."
+				tecnologias={['Ruby', 'Ruby On Rails', 'PostgreSQL', 'TailwindCSS', 'HTML', 'CSS', 'Docker', 'AWS S3', 'AWS RDS', 'AWS ECS']}
+				linkDeploy="https://github.com/caiordm/encurta"
+			/>
+			<CardProjetos
+				src={src4}
+				imgAlt="Encurtador de URL"
+				tituloProjeto="Encurtador"
+				description="Encurtador de URLs personalizado que gera hashes de 5 dígitos únicos para cada link, proporcionando uma forma concisa e memorável de compartilhar URLs longas e complexas."
+				tecnologias={['Ruby', 'Ruby On Rails', 'PostgreSQL', 'SvelteKit']}
+				linkDeploy="https://github.com/caiordm/encurta"
+			/>
+			<CardProjetos
+				src={src1}
+				imgAlt="Mini Twi"
+				tituloProjeto="Mini Twi"
+				description="Rede social inspirada no twitter com funcionalidades como CRUD de Usuário, Posts, Paginação e outros conceitos em Ruby On Rails."
+				tecnologias={['Ruby', 'Ruby On Rails', 'PostgreSQL', 'HTML', 'CSS', 'Bootstrap']}
+				linkDeploy="https://github.com/caiordm/minitwi"
+			/>
+			<CardProjetos
+			src={src2}
+			imgAlt="Liturgia.site"
+			tituloProjeto="Liturgia.site"
+			description="Website onde os fiéis podem ler a palavra diária de forma simples e concisa, para isso é consumida uma API Pública que é atualizada diariamente, foi utilizado media queries e flexbox para garantir a responsividade da página."
+			deploy={true}
+			tecnologias={['SvelteKit', 'TailwindCSS']}
+			linkDeploy="https://liturgia.site"
+			/>
+			<CardProjetos
+				src={src3}
+				imgAlt="Banda Libertah"
+				tituloProjeto="Banda Libertah"
+				description="Landing Page responsiva com design customizado, inspirado no universo musical da banda, para criar uma identidade visual forte e memorável."
+				deploy={true}
+				tecnologias={['SvelteKit', 'TailwindCSS', 'CSS']}
+				linkDeploy="https://libertah.site"
+			/>
+			<CardProjetos
+			src={src6}
+			imgAlt="Sprintech"
+			tituloProjeto="Sprintech"
+			description="Landing Page intuitiva e visualmente atraente para a Sprintech, uma startup de desenvolvimento de software. O objetivo era oferecer uma experiência de usuário fluida, transmitindo a modernidade e simplicidade da marca."
+			deploy={true}
+			tecnologias={['SvelteKit', 'TailwindCSS']}
+			linkDeploy="https://sprintech.net.br"
+			/>
+			<CardProjetos
+				src={src5}
+				imgAlt="ViageBem🧳"
+				tituloProjeto="ViageBem🧳"
+				description="Aplicação onde foi utilizada IA (Gemini API) para recomendar pontos turísticos e dar dicas sobre o destino colocado pelo usuário."
+				deploy={true}
+				tecnologias={['SvelteKit', 'TailwindCSS', 'GeminiAPI']}
+				linkDeploy="https://viagebem.vercel.app"
+			/>
+
+			<span class="outros-projetos"
+				>Veja mais projetos no meu <a href="https://github.com/caiordm">GitHub</a></span
+			>
 		</div>
-		<span class="outros-projetos"
-			>Veja mais projetos no meu <a href="https://github.com/caiordm">GitHub</a></span
-		>
 	</div>
 	<div class="third-content">
 		<h2>Ferramentas ..</h2>
@@ -235,7 +266,7 @@
 				title="GitHub"
 				imgAlt="GitHub"
 				subtitle="Plataforma para controle de versão"
-				imgSrc="{github}"
+				imgSrc={github}
 				color="#040642"
 				colorTitle="#fff"
 				colorSubtitle="#f1f1f6"
@@ -317,7 +348,6 @@
 	.titles {
 		max-width: fit-content;
 		border-radius: 6px;
-
 		transition: 0.4s all;
 	}
 
@@ -335,43 +365,13 @@
 		gap: 1rem;
 	}
 
-	.third-content {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.third-content span {
-		margin-bottom: 2rem;
-	}
-
-	.ferramentas {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 0.1rem;
+	.projetos {
+		width: 100%;
 		justify-content: space-between;
-	}
-
-	.cards-tecnologias {
-		margin-top: 1rem;
 		display: flex;
+		flex-direction: row;
 		flex-wrap: wrap;
 		gap: 0.8rem;
-	}
-
-	.cards-projetos {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 1rem;
-		width: 100%;
-	}
-
-	.projetos {
-		display: flex;
-		flex-direction: column;
-		align-items: baseline;
-		justify-content: flex-start;
-		gap: 2rem;
-		width: 100%;
 	}
 
 	.outros-projetos {
@@ -388,6 +388,29 @@
 		border: 1px solid #e9e9e94c;
 		text-decoration: none;
 	}
+
+	.third-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.third-content span {
+		margin-bottom: 2rem;
+	}
+
+	.ferramentas {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.4rem;
+	}
+
+	.cards-tecnologias {
+		margin-top: 1rem;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.8rem;
+	}
+
 
 	@media (min-width: 2000px) {
 		h1 {
@@ -432,9 +455,9 @@
 
 	@media (max-width: 948px) {
 		.projetos {
-			flex-direction: column;
 			width: 100%;
-			gap: 1rem;
+			flex-wrap: wrap;
+			gap: 0.8rem;
 		}
 	}
 
@@ -487,14 +510,8 @@
 			max-width: 100%;
 		}
 
-		.cards-projetos {
-			display: flex;
+		.card-projeto {
 			flex-wrap: wrap;
-			width: 100%;
-			gap: 1rem;
-		}
-		.projetos {
-			flex-direction: column;
 			width: 100%;
 			gap: 1rem;
 		}
