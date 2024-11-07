@@ -161,7 +161,7 @@
 				tituloProjeto="ArticlesWS"
 				description="POC (Proof Of Concept) que visa aprofundar o conhecimento em Docekr e tecnologias cloud da AWS, como S3. E também entender uma arquitetura baseada em containers."
 				tecnologias={['Ruby', 'Ruby On Rails', 'PostgreSQL', 'TailwindCSS', 'HTML', 'CSS', 'Docker', 'AWS S3', 'AWS RDS', 'AWS ECS']}
-				linkDeploy="https://github.com/caiordm/encurta"
+				linkDeploy="https://github.com/caiordm/aws-proj"
 			/>
 			<CardProjetos
 				src={src4}
@@ -376,6 +376,7 @@
 
 	.outros-projetos {
 		align-self: center;
+		width: 30.6%;
 	}
 
 	.outros-projetos a {
