@@ -3,7 +3,7 @@
 	import CardProjetos from '../lib/CardProjetos.svelte';
 	import CardFerramentas from '../lib/CardFerramentas.svelte';
 
-	import src from '../images/campusLanding.png';
+	import src from '../images/campusvirtual.png';
 	import src1 from '../images/minitwi.png';
 	import src2 from '../images/liturgia.png';
 	import src3 from '../images/libertah.png';
@@ -11,6 +11,7 @@
 	import src5 from '../images/viagebem.png';
 	import src6 from '../images/sprintech.png';
 	import src7 from '../images/awsproj.png';
+	import src8 from '../images/repertoire.png';
 	import github from '../images/githubwhite.png';
 	import { onMount } from 'svelte';
 
@@ -93,7 +94,7 @@
 				<CardTecnologias
 					imgAlt="Laravel"
 					title="Laravel"
-					imgSrc="https://static-00.iconduck.com/assets.00/laravel-icon-497x512-uwybstke.png"
+					imgSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1969px-Laravel.svg.png"
 					color="#ffffff"
 					colorTitle="#ff6d62"
 				/>
@@ -146,6 +147,15 @@
 	<div class="rigth-content">
 		<h2>Projetos ..</h2>
 		<div class="projetos">
+			<CardProjetos
+				src={src8}
+				imgAlt="Repertoire"
+				tituloProjeto="Repertoire"
+				description="O Repertoire é uma plataforma intuitiva que permite a músicos, bandas e outros criativos gerenciarem seus repertórios musicais de forma eficiente. (em desenvolvimento)"
+				deploy={true}
+				tecnologias={['SvelteKit', 'Ruby On Rails', 'PostgresSQL', 'Supabase', 'Vercel']}
+				linkDeploy="https://repertoire-seven.vercel.app/"
+			/>
 			<CardProjetos
 				{src}
 				imgAlt="Campus Virtual"
@@ -215,11 +225,10 @@
 				tecnologias={['SvelteKit', 'TailwindCSS', 'GeminiAPI']}
 				linkDeploy="https://viagebem.vercel.app"
 			/>
-
-			<span class="outros-projetos"
-				>Veja mais projetos no meu <a href="https://github.com/caiordm">GitHub</a></span
-			>
 		</div>
+		<span class="outros-projetos"
+			>Veja mais projetos no meu <a href="https://github.com/caiordm">GitHub</a></span
+		>
 	</div>
 	<div class="third-content">
 		<h2>Ferramentas ..</h2>
@@ -367,16 +376,14 @@
 
 	.projetos {
 		width: 100%;
-		justify-content: space-between;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		gap: 0.8rem;
+		gap: 1rem;
 	}
 
 	.outros-projetos {
-		align-self: center;
-		width: 30.6%;
+		width: 100%;
 	}
 
 	.outros-projetos a {
