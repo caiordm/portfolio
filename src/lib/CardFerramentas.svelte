@@ -21,10 +21,10 @@
 	a {
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: start;
 		height: 4rem;
-		width: 12rem;
-		padding: 1rem 0.4rem;
+		width: 16rem;
+		padding: 1rem;
 		gap: 1rem;
 		border-radius: 24px;
 		border: 2px solid rgba(128, 128, 128, 0.273);
@@ -38,8 +38,8 @@
 	}
 
 	img {
-		width: 5rem;
-		height: 5rem;
+		width: 3.6rem;
+		height: 3.6rem;
 	}
 
 	h1 {

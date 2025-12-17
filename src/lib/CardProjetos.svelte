@@ -60,7 +60,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		font-size: 28pt;
+		font-size: 20pt;
 		color: var(--mid-white);
 		transition: all 0.4s;
 		margin: 0;
@@ -119,7 +119,7 @@
 
 	@media (min-width: 2000px) {
 		h1 {
-			font-size: 42pt;
+			font-size: 30pt;
 		}
 		p {
 			font-size: 28pt;

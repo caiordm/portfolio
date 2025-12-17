@@ -46,8 +46,96 @@
 			</span>
 		</div>
 
+		<h2 style="margin-bottom: 1rem;">Meus Projetos ..</h2>
+
+		<div class="projetos">
+			<CardProjetos
+				src={src8}
+				imgAlt="Repertoire"
+				tituloProjeto="Repertoire"
+				description="O Repertoire é uma plataforma intuitiva que permite a músicos, bandas e outros criativos gerenciarem seus repertórios musicais de forma eficiente. (em desenvolvimento)"
+				deploy={true}
+				tecnologias={['SvelteKit', 'Ruby On Rails', 'PostgresSQL', 'Supabase', 'Vercel']}
+				linkDeploy="https://repertoire-seven.vercel.app/"
+			/>
+			<CardProjetos
+				{src}
+				imgAlt="Campus Virtual"
+				tituloProjeto="Campus Virtual"
+				description="Plataforma de gestão acadêmica, para usuários do tipo administrador, aluno e professor. Com funcionalidades como Boletim, Avisos, Rede Social entre outras."
+				deploy={true}
+				tecnologias={['Vue.js', 'Laravel', 'Inertia.js', 'MySQL']}
+				linkDeploy="https://campusvirtualfront.vercel.app/"
+			/>
+			<CardProjetos
+			src={src2}
+			imgAlt="Liturgia.site"
+			tituloProjeto="Liturgia.site"
+			description="Website onde os fiéis podem ler a palavra diária de forma simples e concisa, para isso é consumida uma API Pública que é atualizada diariamente, foi utilizado media queries e flexbox para garantir a responsividade da página."
+			deploy={true}
+			tecnologias={['SvelteKit', 'TailwindCSS']}
+			linkDeploy="https://liturgia-me.vercel.app"
+			/>
+			<CardProjetos
+				src={src7}
+				imgAlt="ArticlesWS"
+				tituloProjeto="ArticlesWS"
+				description="POC (Proof Of Concept) que visa aprofundar o conhecimento em Docekr e tecnologias cloud da AWS, como S3. E também entender uma arquitetura baseada em containers."
+				tecnologias={['Ruby', 'Ruby On Rails', 'PostgreSQL', 'TailwindCSS', 'HTML', 'CSS', 'Docker', 'AWS S3', 'AWS RDS', 'AWS ECS']}
+				linkDeploy="https://github.com/caiordm/aws-proj"
+			/>
+			<CardProjetos
+				src={src4}
+				imgAlt="Encurtador de URL"
+				tituloProjeto="Encurtador"
+				description="Encurtador de URLs personalizado que gera hashes de 5 dígitos únicos para cada link, proporcionando uma forma concisa e memorável de compartilhar URLs longas e complexas."
+				tecnologias={['Ruby', 'Ruby On Rails', 'PostgreSQL', 'SvelteKit']}
+				linkDeploy="https://github.com/caiordm/encurta"
+			/>
+			<CardProjetos
+			src={src1}
+			imgAlt="Mini Twi"
+			tituloProjeto="Mini Twi"
+			description="Rede social inspirada no twitter com funcionalidades como CRUD de Usuário, Posts, Paginação e outros conceitos em Ruby On Rails."
+			tecnologias={['Ruby', 'Ruby On Rails', 'PostgreSQL', 'HTML', 'CSS', 'Bootstrap']}
+			linkDeploy="https://github.com/caiordm/minitwi"
+			/>
+			<CardProjetos
+			src={src5}
+			imgAlt="ViageBem🧳"
+			tituloProjeto="ViageBem🧳"
+			description="Aplicação onde foi utilizada IA (Gemini API) para recomendar pontos turísticos e dar dicas sobre o destino colocado pelo usuário."
+			deploy={true}
+			tecnologias={['SvelteKit', 'TailwindCSS', 'GeminiAPI']}
+			linkDeploy="https://viagebem.vercel.app"
+			/>
+			<CardProjetos
+			src={src6}
+			imgAlt="Sprintech"
+			tituloProjeto="Sprintech"
+			description="Landing Page intuitiva e visualmente atraente para a Sprintech, uma startup de desenvolvimento de software. O objetivo era oferecer uma experiência de usuário fluida, transmitindo a modernidade e simplicidade da marca."
+			deploy={true}
+			tecnologias={['SvelteKit', 'TailwindCSS']}
+			linkDeploy="https://sprintech.net.br"
+			/>
+			<CardProjetos
+				src={src3}
+				imgAlt="Banda Libertah"
+				tituloProjeto="Banda Libertah"
+				description="Landing Page responsiva com design customizado, inspirado no universo musical da banda, para criar uma identidade visual forte e memorável."
+				deploy={true}
+				tecnologias={['SvelteKit', 'TailwindCSS', 'CSS']}
+				linkDeploy="https://bandalibertah.vercel.app"
+				/>
+		</div>
+		<br>
+		<span class="outros-projetos">Veja mais projetos no meu <a href="https://github.com/caiordm">GitHub</a></span>
+	</div>
+
+	<div class="rigth-content">
 		<div class="tecnologias">
 			<h2>Tecnologias ..</h2>
+			<span>Tecnologias que utilizei em meus projetos</span>
 			<div class="cards-tecnologias">
 				<CardTecnologias
 					imgAlt="HTML5"
@@ -129,7 +217,7 @@
 				<CardTecnologias
 					imgAlt="MySQL"
 					title="MySQL"
-					imgSrc="https://www.tshirtgeek.com.br/wp-content/uploads/2021/08/com031.jpg"
+					imgSrc="https://res.cloudinary.com/appmasters-io/image/upload/v1624744345/mysql_87a2317566.png"
 					color="#ffffff"
 					colorTitle="#005c87"
 				/>
@@ -143,106 +231,19 @@
 			</div>
 		</div>
 	</div>
-
-	<div class="rigth-content">
-		<h2>Projetos ..</h2>
-		<div class="projetos">
-			<CardProjetos
-				src={src8}
-				imgAlt="Repertoire"
-				tituloProjeto="Repertoire"
-				description="O Repertoire é uma plataforma intuitiva que permite a músicos, bandas e outros criativos gerenciarem seus repertórios musicais de forma eficiente. (em desenvolvimento)"
-				deploy={true}
-				tecnologias={['SvelteKit', 'Ruby On Rails', 'PostgresSQL', 'Supabase', 'Vercel']}
-				linkDeploy="https://repertoire-seven.vercel.app/"
-			/>
-			<CardProjetos
-				{src}
-				imgAlt="Campus Virtual"
-				tituloProjeto="Campus Virtual"
-				description="Plataforma de gestão acadêmica, para usuários do tipo administrador, aluno e professor. Com funcionalidades como Boletim, Avisos, Rede Social entre outras."
-				deploy={true}
-				tecnologias={['Vue.js', 'Laravel', 'Inertia.js', 'MySQL']}
-				linkDeploy="https://campusvirtualfront.vercel.app/"
-			/>
-			<CardProjetos
-				src={src7}
-				imgAlt="ArticlesWS"
-				tituloProjeto="ArticlesWS"
-				description="POC (Proof Of Concept) que visa aprofundar o conhecimento em Docekr e tecnologias cloud da AWS, como S3. E também entender uma arquitetura baseada em containers."
-				tecnologias={['Ruby', 'Ruby On Rails', 'PostgreSQL', 'TailwindCSS', 'HTML', 'CSS', 'Docker', 'AWS S3', 'AWS RDS', 'AWS ECS']}
-				linkDeploy="https://github.com/caiordm/aws-proj"
-			/>
-			<CardProjetos
-				src={src4}
-				imgAlt="Encurtador de URL"
-				tituloProjeto="Encurtador"
-				description="Encurtador de URLs personalizado que gera hashes de 5 dígitos únicos para cada link, proporcionando uma forma concisa e memorável de compartilhar URLs longas e complexas."
-				tecnologias={['Ruby', 'Ruby On Rails', 'PostgreSQL', 'SvelteKit']}
-				linkDeploy="https://github.com/caiordm/encurta"
-			/>
-			<CardProjetos
-				src={src1}
-				imgAlt="Mini Twi"
-				tituloProjeto="Mini Twi"
-				description="Rede social inspirada no twitter com funcionalidades como CRUD de Usuário, Posts, Paginação e outros conceitos em Ruby On Rails."
-				tecnologias={['Ruby', 'Ruby On Rails', 'PostgreSQL', 'HTML', 'CSS', 'Bootstrap']}
-				linkDeploy="https://github.com/caiordm/minitwi"
-			/>
-			<CardProjetos
-			src={src2}
-			imgAlt="Liturgia.site"
-			tituloProjeto="Liturgia.site"
-			description="Website onde os fiéis podem ler a palavra diária de forma simples e concisa, para isso é consumida uma API Pública que é atualizada diariamente, foi utilizado media queries e flexbox para garantir a responsividade da página."
-			deploy={true}
-			tecnologias={['SvelteKit', 'TailwindCSS']}
-			linkDeploy="https://liturgia.site"
-			/>
-			<CardProjetos
-				src={src3}
-				imgAlt="Banda Libertah"
-				tituloProjeto="Banda Libertah"
-				description="Landing Page responsiva com design customizado, inspirado no universo musical da banda, para criar uma identidade visual forte e memorável."
-				deploy={true}
-				tecnologias={['SvelteKit', 'TailwindCSS', 'CSS']}
-				linkDeploy="https://libertah.site"
-			/>
-			<CardProjetos
-			src={src6}
-			imgAlt="Sprintech"
-			tituloProjeto="Sprintech"
-			description="Landing Page intuitiva e visualmente atraente para a Sprintech, uma startup de desenvolvimento de software. O objetivo era oferecer uma experiência de usuário fluida, transmitindo a modernidade e simplicidade da marca."
-			deploy={true}
-			tecnologias={['SvelteKit', 'TailwindCSS']}
-			linkDeploy="https://sprintech.net.br"
-			/>
-			<CardProjetos
-				src={src5}
-				imgAlt="ViageBem🧳"
-				tituloProjeto="ViageBem🧳"
-				description="Aplicação onde foi utilizada IA (Gemini API) para recomendar pontos turísticos e dar dicas sobre o destino colocado pelo usuário."
-				deploy={true}
-				tecnologias={['SvelteKit', 'TailwindCSS', 'GeminiAPI']}
-				linkDeploy="https://viagebem.vercel.app"
-			/>
-		</div>
-		<span class="outros-projetos"
-			>Veja mais projetos no meu <a href="https://github.com/caiordm">GitHub</a></span
-		>
-	</div>
 	<div class="third-content">
 		<h2>Ferramentas ..</h2>
 		<span>Algumas ferramentas que estou utilizando no momento</span>
 		<div class="ferramentas">
 			<CardFerramentas
-				title="Zorin OS"
-				imgAlt="Zorin OS"
+				title="Fedora"
+				imgAlt="Fedora"
 				subtitle="Sistema operacional"
-				imgSrc="https://upload.wikimedia.org/wikipedia/commons/1/14/Zorin_Logomark.svg"
+				imgSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Fedora-logo.svg/2048px-Fedora-logo.svg.png"
 				color="#e6e9ee"
 				colorTitle="#123354"
 				colorSubtitle="#597088"
-				link="https://zorin.com/"
+				link="https://www.fedoraproject.org/"
 			/>
 			<CardFerramentas
 				title="VS Code"
@@ -257,8 +258,8 @@
 				title="Zen Browser"
 				imgAlt="Zen Browser"
 				subtitle="Navegador Web"
-				imgSrc="https://zen-browser.app/logos/zen-black.svg"
-				color="#0d0c0c"
+				imgSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Zen_Browser_logo_%28red_circles%29.svg/2048px-Zen_Browser_logo_%28red_circles%29.svg.png"
+				color="#1f1f1f"
 				colorTitle="var(--mid-white)"
 				link="https://zen-browser.app/"
 			/>
@@ -296,7 +297,7 @@
 				imgAlt="DBeaver"
 				subtitle="Database Tool"
 				imgSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/DBeaver_logo.svg/256px-DBeaver_logo.svg.png"
-				color="#6e98bf"
+				color="#42312a"
 				colorTitle="var(--mid-white)"
 				link="https://dbeaver.io/download/"
 			/>
@@ -410,6 +411,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: 0.4rem;
+		margin-bottom: 2rem;
 	}
 
 	.cards-tecnologias {
@@ -417,6 +419,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: 0.8rem;
+		margin-top: 2rem;
 	}
 
 
@@ -506,12 +509,8 @@
 			font-size: 2rem;
 		}
 
-		.tecnologias {
-			padding-left: 0.5rem;
-		}
-
 		.cards-tecnologias {
-			margin-top: 1rem;
+			margin-top: 2rem;
 			display: flex;
 			flex-wrap: wrap;
 			gap: 0.8rem;
